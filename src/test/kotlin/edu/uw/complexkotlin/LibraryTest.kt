@@ -16,6 +16,18 @@ class LibraryTest {
     @Test fun fizzbuzzToTwelve() {
         assertEquals("FIZZBUZZFIZZFIZZBUZZFIZZ", fizzbuzz(1..12))
     }
+    @Test fun fizzbuzzToFifty() {
+        val expected = "FIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZFIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZFIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZFIZZBUZZ"
+        assertEquals(expected, fizzbuzz(1..50))
+    }
+
+    @Test fun fizzbuzzFor90To105() {
+        assertEquals("FIZZBUZZDOHFIZZBUZZFIZZDOHFIZZBUZZFIZZFIZZBUZZDOH", fizzbuzzdoh(90..105))
+    }
+
+    @Test fun fizzbuzzFor20To35() {
+        assertEquals("BUZZFIZZDOHFIZZBUZZFIZZDOHFIZZBUZZFIZZBUZZDOH", fizzbuzzdoh(20..35))
+    }
 
     @Test fun r1Test() {
         assertEquals(">>> FOO: {BAR}", r1())
